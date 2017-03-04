@@ -7,6 +7,9 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import('vendor/uikit.min.js');
+  app.import('vendor/uikit-icons.min.js');
+  
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
