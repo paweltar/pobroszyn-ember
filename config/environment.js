@@ -23,6 +23,13 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['g-map'] = {
+  key: 'AIzaSyCF7bPFzbM0jCMjmgHfYkOP5m69n7Q08hs',
+  version: '3.26',
+  language: 'pl',
+  protocol: 'https'
+}
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

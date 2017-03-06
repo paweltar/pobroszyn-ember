@@ -1,6 +1,10 @@
 <div class="uk-card uk-card-default">
   <div class="uk-card-media-top">
-    <div id="map"></div>
+    <div id="map">
+      {{#g-map lat=50.786394 lng=21.462547 zoom=12 as |context|}}
+        {{g-map-marker context lat=50.786394 lng=21.462547}}
+      {{/g-map}}
+    </div>
   </div>
   <div class="uk-card-body">
     <ul class="uk-list uk-list-divider">
