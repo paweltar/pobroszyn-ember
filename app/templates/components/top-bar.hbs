@@ -1,0 +1,43 @@
+{{!-- From medium screen up --}}
+
+<nav class="uk-navbar-container uk-visible@s" uk-navbar>
+  <div class="uk-navbar-left">
+    <ul class="uk-navbar-nav">
+      <li class="uk-active"><a href="#">Schronisko w Wąworkowie</a></li>
+    </ul>
+  </div>
+
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav">
+      <li><a href="#">Pytania</a></li>
+      <li><a href="#">Kontakt</a></li>
+      <li><a href="#">O Nas</a></li>
+      <li><a href="#">Galeria</a></li>
+    </ul>
+  </div>
+</nav>
+
+{{!-- On small screens --}}
+<div class="uk-position-relative uk-hidden@s">
+  <nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push; mode: click">
+    <div class="uk-navbar-left">
+      <ul class="uk-navbar-nav">
+        <li>
+          <a class="uk-navbar-toggle" href="#">
+            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+        </a>
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li><a href="#">Pytania</a></li>
+              <li><a href="#">Kontakt</a></li>
+              <li><a href="#">O Nas</a></li>
+              <li><a href="#">Galeria</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+{{yield}}
