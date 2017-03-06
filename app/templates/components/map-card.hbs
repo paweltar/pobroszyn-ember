@@ -1,17 +1,15 @@
-<div class="uk-card uk-card-default">
+<div class="uk-card uk-card-default top-section__card">
   <div class="uk-card-media-top">
     <div id="map">
-      {{#g-map lat=50.786394 lng=21.462547 zoom=12 as |context|}}
+      {{#g-map lat=50.786394 lng=21.462547 draggable=true zoom=12 as |context|}}
         {{g-map-marker context lat=50.786394 lng=21.462547}}
       {{/g-map}}
     </div>
   </div>
-  <div class="uk-card-body">
-    <ul class="uk-list uk-list-divider">
-    <li>List item 1</li>
-    <li>List item 2</li>
-    <li>List item 3</li>
-</ul>
+  <div class="uk-card-body uk-text-center">
+      <p class="uk-text-bold"><span class="uk-text-meta">telefon:</span>&nbsp;888 210 924</p>
+      <p class="uk-text-bold"><span class="uk-text-meta">adres:</span>&nbsp;Wąworków 34</p>
+      <p class="uk-text-bold"><span class="uk-text-meta">poczta:</span>&nbsp;27-500 Opatów</p>
   </div>
 </div>
 {{yield}}
