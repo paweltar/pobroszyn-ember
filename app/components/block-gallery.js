@@ -11,7 +11,8 @@ export default Ember.Component.extend({
       infinite: true,
       draggable: true,
       prevArrow: '.slidenav--left',
-      nextArrow: '.slidenav--right'
+      nextArrow: '.slidenav--right',
+      speed: 1500
     });
   }
 });
