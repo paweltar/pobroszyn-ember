@@ -1,13 +1,13 @@
 {{!-- From medium screen up --}}
 
-<nav class="navbar--top uk-navbar-container uk-visible@s" style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom" uk-navbar>
-  <div class="uk-navbar-left">
+<nav class="navbar--top uk-navbar-container uk-navbar-transparent uk-light uk-visible@s" style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom" uk-navbar>
+  <div class="uk-navbar-left uk-margin-large-left">
     <ul class="uk-navbar-nav">
-      <li class="uk-active"><a href="#">Schronisko w Wąworkowie</a></li>
+      <li class="uk-nav-header"><a href="#">Schronisko dla Kobiet i Mężczyzn w Wąworkowie</a></li>
     </ul>
   </div>
 
-  <div class="uk-navbar-right">
+  <div class="uk-navbar-right uk-margin-large-right">
     <ul class="uk-navbar-nav">
       <li><a href="#">Pytania</a></li>
       <li><a href="#">Kontakt</a></li>
@@ -19,7 +19,7 @@
 
 {{!-- On small screens --}}
 <div class="uk-position-relative uk-hidden@s">
-  <nav class="uk-navbar-container" uk-navbar="dropbar: true; dropbar-mode: push; mode: click">
+  <nav class="navbar--mobile uk-navbar-transparent uk-navbar-container uk-light" uk-navbar="dropbar: true; dropbar-mode: push; mode: click">
     <div class="uk-navbar-left">
       <ul class="uk-navbar-nav">
         <li>
@@ -45,7 +45,7 @@
         <li><a href="#">Kontakt</a></li>
         <li><a href="#">O Nas</a></li>
         <li><a href="#">Galeria</a></li>
-    </ul>
+      </ul>
     </div>
   </div>
 </div>
