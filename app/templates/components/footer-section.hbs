@@ -1,21 +1,40 @@
 {{menu-bottom}}
-<div class="uk-section uk-section-secondary uk-section-large uk-light">
-    <div class="uk-container">
-
-        <h3>Section Secondary</h3>
-
-        <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+<div class="uk-section uk-section-secondary uk-section-medium uk-light">
+  <div class="uk-container">
+    <div class="uk-grid-match uk-grid-divider" uk-grid>
+      <div class="uk-width-1-2@m">
+        <ul class="uk-nav uk-nav-default">
+          <li class="uk-nav-header">Schronisko w Wąworkowie pod Opatowem</li>
+          <li class="uk-nav-divider"></li>
+          <li><span class="uk-text-meta uk-margin-small-right">poczta:</span>27-500 Opatów</li>
+          <li><span class="uk-text-meta uk-margin-small-right">adres:</span>Wąworków 34</li>
+          <li><span class="uk-text-meta uk-margin-small-right">telefon:</span>888 210 924</li>
+        </ul>
+        <hr>
+        <p class="uk-text-meta">Zachęcamy do kontaktu telefonicznego ale istnieje tez możliwość skorzystania z formularza kontaktowego.</p>
+      </div>
+      <div class="uk-width-1-2@m">
+        <form>
+          <fieldset class="uk-fieldset">
+            <legend class="uk-legend">Formularz kontaktowy</legend>
+            <div class="uk-margin">
+              <input class="uk-input uk-width-1-1" type="text" placeholder="Twój email">
             </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="uk-margin">
+              <textarea class="uk-textarea uk-width-1-1" rows="5" placeholder="Twoja wiadomość"></textarea>
             </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="uk-margin">
+              <input class="uk-button uk-button-default uk-width-1-1" type="submit" value="Wyślij">
             </div>
-        </div>
-
+          </fieldset>
+        </form>
+      </div>
     </div>
+  </div>
+</div>
+<div class="uk-section uk-section-media uk-light uk-background-cover uk-background-fixed uk-padding-small menu-bottom__container">
+  <div class="uk-container uk-container-small">
+    <p class="uk-text-meta uk-margin-small-right uk-text-right"><a class="uk-link-muted" href="http://paweltargonski.pl/" target="blank">PT | 2017 &copy;</a></p>
+  </div>
 </div>
 {{yield}}
