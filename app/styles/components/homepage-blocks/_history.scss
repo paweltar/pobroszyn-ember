@@ -1,6 +1,6 @@
 .uk-card-primary.block--history {
   background-color: #A58962;
   &:hover {
-    background-color: #D0BA95;
+    background-color: lighten(#A58962, 10%);
   }
 }
