@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('o-nas');
+  this.route('pytania');
 });
 
 export default Router;
