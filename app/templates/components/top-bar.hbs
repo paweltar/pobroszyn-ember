@@ -3,7 +3,7 @@
 <nav class="navbar--top uk-navbar-container uk-navbar-transparent uk-light uk-visible@s" style="z-index: 980;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top; bottom: #bottom" uk-navbar>
   <div class="uk-navbar-left uk-margin-large-left">
     <ul class="uk-navbar-nav">
-      <li class="uk-nav-header"><a href="#">Schronisko dla Kobiet i Mężczyzn w Wąworkowie</a></li>
+      <li class="uk-nav-header">{{#link-to "index"}}Schronisko dla Kobiet i Mężczyzn w Wąworkowie{{/link-to}}</li>
     </ul>
   </div>
 
@@ -11,7 +11,7 @@
     <ul class="uk-navbar-nav">
       <li><a href="#">Pytania</a></li>
       <li><a href="#">Kontakt</a></li>
-      <li><a href="#">O Nas</a></li>
+      <li>{{#link-to "o-nas"}}O Nas{{/link-to}}</li>
       <li><a href="#">Galeria</a></li>
     </ul>
   </div>
@@ -41,9 +41,10 @@
       <ul class="uk-nav-primary uk-nav-center uk-nav-parent-icon" uk-nav>
         <li class="uk-nav-header">Menu</li>
         <li class="uk-nav-divider"></li>
+        <li>{{#link-to "index"}}Strona Główna{{/link-to}}</li>
         <li><a href="#">Pytania</a></li>
         <li><a href="#">Kontakt</a></li>
-        <li><a href="#">O Nas</a></li>
+        <li>{{#link-to "o-nas"}}O Nas{{/link-to}}</li>
         <li><a href="#">Galeria</a></li>
       </ul>
     </div>
