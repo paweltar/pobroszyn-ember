@@ -10,6 +10,7 @@ module.exports = function(defaults) {
   app.import('vendor/uikit.min.js');
   app.import('vendor/uikit-icons.min.js');
   app.import('bower_components/slick-carousel/slick/slick.js');
+  app.import('vendor/simple-lightbox.min.js');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
