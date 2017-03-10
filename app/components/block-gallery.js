@@ -7,12 +7,13 @@ export default Ember.Component.extend({
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 3500,
       infinite: true,
       draggable: true,
       prevArrow: '.slidenav--left',
       nextArrow: '.slidenav--right',
-      speed: 1500
+      speed: 600,
+      cssEase: 'cubic-bezier(0.445, 0.05, 0.55, 0.95)'
     });
   }
 });
