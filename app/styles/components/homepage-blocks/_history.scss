@@ -1,6 +1,9 @@
-.uk-card-primary.block--history {
-  background-color: #A58962;
+.uk-card-default.block--history {
+  background: linear-gradient( $card-history, darken($card-history, 0%) );
+  h3 {
+    color: #fff;
+  }
   &:hover {
-    background-color: lighten(#A58962, 10%);
+    background: linear-gradient( $card-history, darken($card-history, 10%) );
   }
 }
