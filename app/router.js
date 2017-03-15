@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('o-nas');
   this.route('pytania');
   this.route('galeria');
+  this.route('wspomnienia');
 });
 
 export default Router;
