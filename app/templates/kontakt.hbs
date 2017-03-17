@@ -1,1 +1,44 @@
+<div class="uk-section uk-section-muted">
+  <div class="uk-container">
+    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+      <div class="uk-card-media-left uk-cover-container">
+        <div class="contact__map">
+          {{#g-map lat=50.786394 lng=21.462547 draggable=true zoom=10 as |context|}}
+            {{g-map-marker context lat=50.786394 lng=21.462547}}
+          {{/g-map}}
+        </div>
+      </div>
+      <div>
+        <div class="uk-card-body">
+          <article class="uk-article">
+            <h1 class="uk-heading-line"><span>Lokalizacja i kontakt</span></h1>
+            <p class="uk-article-meta">Gdzie jesteśmy i jak się z nami skontaktować?</p>
+            <div>
+              <span class="uk-margin-small-right" uk-icon="icon: mail"></span>
+              <span class="uk-text-middle">27-500 Opatów</span>
+            </div>
+            <div>
+              <span class="uk-margin-small-right" uk-icon="icon:  location"></span>
+              <span class="uk-text-middle">Wąworków 34</span>
+            </div>
+            <div>
+              <span class="uk-margin-small-right" uk-icon="icon:  phone"></span>
+              <span class="uk-text-middle">888 210 924</span>
+            </div>
+            <p class="uk-dropcap">Schronisko położone jest w spokojnej i malowniczej okolicy, około 5 km. od Opatowa. Teren, na którym zlokalizowane jest schronisko umożliwia prowadzenie ogrodu, jest miejsce dla zwierząt domowych a przede wszystkim daje możliwość wyciszenia
+              poprzez codzienny kontakt z przyrodą.</p>
+            <p>W okolicy schroniska znajdują się szlaki turystyczne biegnące doliną Opatówki, do źródełka św. Wincentego Kadłubka czy średniowiecznej baszty w Tudorowie.</p>
+          </article>
+          <hr class="uk-divider-icon">
+          <div class="uk-grid-small uk-child-width-auto" uk-grid>
+            <div>
+              {{#link-to "pytania" class="uk-button uk-button-text"}}Zobacz częste pytania{{/link-to}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 {{outlet}}
