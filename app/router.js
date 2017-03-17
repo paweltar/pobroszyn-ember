@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('galeria');
   this.route('wspomnienia', function() {
     this.route('dom');
+    this.route('pan-kolasa');
   });
 });
 
