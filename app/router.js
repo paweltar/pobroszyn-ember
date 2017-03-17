@@ -14,6 +14,7 @@ Router.map(function() {
     this.route('dom');
     this.route('pan-kolasa');
   });
+  this.route('kontakt');
 });
 
 export default Router;
