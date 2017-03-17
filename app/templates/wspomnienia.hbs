@@ -1,16 +1,31 @@
 <div class="uk-section uk-section-medium uk-section-muted">
   <div class="uk-container">
-    <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-      <div class="about__block--media uk-card-media-left uk-cover-container uk-background-cover" uk-scrollspy="cls:uk-animation-fade" style="background-image: url(/assets/images/bg6.jpg);">
-      </div>
-      <div>
-        <div class="uk-card-body uk-padding-large">
-          {{#link-to 'wspomnienia' class='uk-position-medium uk-position-top-right uk-button uk-button-secondary'}}Spis treści{{/link-to}}
+    <div class="uk-grid-divider" uk-grid>
+      <div class="uk-width-1-3@m">
+        <div>
+          <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+            <li class="uk-active">{{#link-to 'wspomnienia'}}Wstęp{{/link-to}}</li>
+            <li class="uk-parent">
+              <a href="#">Mieszkańcy domu</a>
+              <ul class="uk-nav-sub">
+                <li><a href="#">Wspomnienia z jednego domu</a></li>
+                <li><a href="#">Pan Kolasa</a></li>
+              </ul>
+            </li>
+            <li class="uk-parent">
+              <a href="#">Stare notatki</a>
+              <ul class="uk-nav-sub">
+                <li><a href="#">Notatka</a></li>
+                <li><a href="#">Notatka</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </div>
+      <div class="uk-width-expand@m">
+        {{outlet}}
       </div>
     </div>
   </div>
 </div>
 {{yield}}
-
-{{outlet}}
