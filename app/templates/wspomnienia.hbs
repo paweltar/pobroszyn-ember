@@ -6,9 +6,9 @@
           <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
             <li class="uk-active">{{#link-to 'wspomnienia'}}Wstęp{{/link-to}}</li>
             <li class="uk-parent">
-              <a href="#">Mieszkańcy domu</a>
+              <a href="#">Wspomnienia z jednego domu</a>
               <ul class="uk-nav-sub">
-                <li><a href="#">Wspomnienia z jednego domu</a></li>
+                <li>{{#link-to 'wspomnienia.dom'}}Pani Aniela{{/link-to}}</li>
                 <li><a href="#">Pan Kolasa</a></li>
               </ul>
             </li>
@@ -22,8 +22,8 @@
           </ul>
         </div>
       </div>
-      <div class="uk-width-expand@m">
-        {{outlet}}
+      <div class="uk-width-expand@m" id="memories-container">
+          {{outlet}}
       </div>
     </div>
   </div>
